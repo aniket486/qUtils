@@ -19,8 +19,6 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class PausableComparableThreadPoolExecutor extends ThreadPoolExecutor {
 
-	static ILog log = LogManager.getLogger(PausableComparableThreadPoolExecutor.class);
-
 	private static final long TOO_MANY_JOBS_SLEEP_TIME = 5 * 60 * 1000;
 	private static final int QUEUE_INIT_SIZE = 200;
 
