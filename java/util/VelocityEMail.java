@@ -1,5 +1,3 @@
-package adcom.ddpm.monitor;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
@@ -29,7 +27,7 @@ import org.apache.velocity.context.Context;
 
 public class VelocityEMail
 {
-	public static final String configFileName = "ddpm.email.properties";
+	public static final String configFileName = "aniket.email.properties";
 	public static final String velocityConfigPath = "velocity.properties.path";
 	
 	public static Logger logger = Logger.getLogger(VelocityEMail.class);
@@ -117,7 +115,7 @@ public class VelocityEMail
 	public void send(InternetAddress[] addresses, Context context)
 	throws Exception
 	{
-		send("ddpm", addresses, context);
+		send("aniket", addresses, context);
 	}
 	
 	/**
